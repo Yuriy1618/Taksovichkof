@@ -5,11 +5,12 @@ header {
   position: relative;
 }
 form {
+  border: 2px solid green;
+  border-radius: 20px;
   position: absolute;
   right: 75px;
   top: 30px;
   background-color: #eaff64;
-  border-radius: 10px;
   margin: 0 auto;
   padding: 20px;
   width: 250px;
@@ -43,14 +44,18 @@ label {
 }
 .navigation {
   position: absolute;
-  left: 30px;
-  top: 30px;
+  width: 100%;
+  background-color: #eaff64;
+  height: 60px;
 }
 select {
+  position: relative;
+  top: 15px;
   width: 200px;
   height: 40px;
-  border-radius: 10px;
   background-color: #eaff64;
+  border: 0px;
+  padding-left: 10px;
 }
 option {
   width: 200px;
@@ -58,11 +63,14 @@ option {
   background-color: #eaff64;
 }
 #submitMenu {
+  position: relative;
+  top: 15px;
+  border: 0px;
   width: 200px;
   height: 40px;
-  border-radius: 10px;
   background-color: #eaff64;
   text-align: left;
+  padding-left: 10px;
 }
 .logoForHeader {
   position: relative;
