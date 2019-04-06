@@ -1,0 +1,104 @@
+//переменные
+@mainColor: #50b848;
+@buttonColor:  rgb(76, 241, 92);
+@selectColor:  #EAFF64;
+@shadowColor:  #d9e991;
+header{
+    background-color: @mainColor;
+    min-height: 100px;
+    height: 220px;
+    position: relative;
+}
+form {
+    position: absolute;                 //местоположение
+    right: 75px;
+    top: 30px; 
+
+    background-color: @selectColor;        //стили
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 20px;
+
+    width: 250px;                        //размеры
+    height: 180px;
+}
+fieldset {                               //рамка
+    padding: 10px;
+  
+    border: 1px solid #34495e;
+    border-radius: 5px;
+}
+fieldset legend {
+    color: #34495e;
+}
+label {                                   //названия input
+    display: block;
+    margin-bottom: 5px;
+}
+  
+.personalArea input {                     //общие параметры input
+   width: 80%;
+   height: 24px;
+   margin-bottom: 10px;
+   padding: 2px 5px;
+  
+  
+   border: 1px solid #cccccc;            
+   border-radius: 5px;
+}
+#subm {                                   //параметро кнопки
+    position: relative;                
+    background-color:@buttonColor;
+    left: 90px;
+    bottom: 11px;
+}
+//навигация по сайту (кнопки в хидер)
+.navigation {
+    position: absolute;
+    left: 30px;
+    top: 30px; 
+}
+select {
+    width: 200px;
+    height:40px;
+    border-radius: 10px;
+    background-color: @selectColor;
+}
+option{
+    width: 200px;
+    height:40px;
+    background-color: @selectColor;
+}
+#submitMenu{
+    width: 200px;
+    height:40px;
+    border-radius: 10px;
+    background-color: @selectColor;
+    text-align: left;
+}
+
+.logoForHeader{
+    position: relative;
+    width: 300px;
+    bottom: 30px;
+}
+.logoPuma{
+    position: relative;
+    width: 500px;
+    left: 350px;
+    top: 30px;
+}
+#pumaText{
+    position: relative;
+    left: 410px;
+    bottom: 200px;
+
+    font-size: 35px;
+}
+#officialText{
+    position: relative;
+    left: 340px;
+    bottom: 210px;
+
+    font-size: 20px;
+}
