@@ -1,13 +1,93 @@
-header {
+.grid{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(minmax(150px, 1fr));
+  grid-template-rows: 100px 500px 350px 350px 200px ;
+  grid-template-areas: 
+  "header"
+  "main1"
+  "main2"
+  "main3"
+  "footer"
+  }
+
+header{
+  grid-area: header;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: #50b848;
-  min-height: 100px;
-  height: 220px;
-  position: relative;
 }
+.main1{
+  grid-area: main1;
+  grid-column-end: 6;
+  background-color: aqua;
+}
+.main2{
+  background-color: silver;
+  grid-area: main2;
+  grid-column-end: 6;
+}
+.main3{
+  background-color: black;
+  grid-area: main3;
+  grid-column-end: 6;
+}
+footer{
+  background-color: blue;
+  grid-area: footer;
+  grid-column-end: 6;
+}
+.navigation {
+  width: 100%;
+  background-color: #eaff64;
+  height: 50px;
+  padding-top: 20px;
+}
+select {
+  float: left;
+  width: 15%;
+  height: 40px;
+  background-color: #eaff64;
+  border: 0px;
+  padding-left: 10px;
+  cursor: pointer;
+
+}
+option {
+  width: 200px;
+  height: 40px;
+  background-color:#eaff64;
+  padding-left: 10px;
+}
+
+.menuButton{
+  padding-top: 5px;
+  font-size: 30px;
+  width: 200px;
+  height: 40px;
+  background-color: #eaff64;
+  border: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  margin: 10px;
+}
+.logoPuma {
+  position: fixed;
+  top: 0%;
+  right: 6%;
+  width: 13%;
+}
+
+
+
+
+/*
+Форма для входа в личный кабинет
 form {
   border: 2px solid green;
   border-radius: 20px;
-  position: absolute;
   right: 75px;
   top: 30px;
   background-color: #eaff64;
@@ -25,7 +105,6 @@ fieldset legend {
   color: #34495e;
 }
 label {
-  display: block;
   margin-bottom: 5px;
 }
 .personalArea input {
@@ -37,61 +116,9 @@ label {
   border-radius: 5px;
 }
 #subm {
-  position: relative;
   background-color: #4cf15c;
   left: 90px;
   bottom: 11px;
 }
-.navigation {
-  position: absolute;
-  width: 100%;
-  background-color: #eaff64;
-  height: 60px;
-}
-select {
-  position: relative;
-  top: 15px;
-  width: 200px;
-  height: 40px;
-  background-color: #eaff64;
-  border: 0px;
-  padding-left: 10px;
-}
-option {
-  width: 200px;
-  height: 40px;
-  background-color: #eaff64;
-}
-#submitMenu {
-  position: relative;
-  top: 15px;
-  border: 0px;
-  width: 200px;
-  height: 40px;
-  background-color: #eaff64;
-  text-align: left;
-  padding-left: 10px;
-}
-.logoForHeader {
-  position: relative;
-  width: 300px;
-  bottom: 30px;
-}
-.logoPuma {
-  position: relative;
-  width: 500px;
-  left: 350px;
-  top: 30px;
-}
-#pumaText {
-  position: relative;
-  left: 410px;
-  bottom: 200px;
-  font-size: 35px;
-}
-#officialText {
-  position: relative;
-  left: 340px;
-  bottom: 210px;
-  font-size: 20px;
-}
+
+*/
