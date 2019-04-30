@@ -1,8 +1,55 @@
+/*для хидера*/
 @media screen and (max-width: 600px) {
-  .navigation {
+  .menu {
     display: none;
+  }
+  li {
+    float: none;
   }
   .menuButton {
     display: inline-block;
+  }
+}
+/*для футера*/
+@media screen and (max-width: 600px) {
+  .number {
+    font-size: 10px;
+    margin: 5%;
+    padding-top: none;
+  }
+  .grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(minmax(150px, 1fr));
+    grid-template-rows: 50px 150px 170px 150px 75px ;
+    grid-template-areas: "header" "main1" "main2" "main3" "footer";
+  }
+}
+/*для main1*/
+@media screen and (max-width: 600px) {
+  .main1 > .text > .textPuma {
+    font-size: 2em;
+  }
+  .main1 > .text > .textTagline {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .logoPartnersMix {
+    width: 8%;
+    padding-left: 2%;
+    float: left;
+  }
+  .main2 > .textPartners > .partners {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-width: 600px) {
+  .grid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(minmax(150px, 1fr));
+    grid-template-rows: 100px 250px 300px 270px 110px ;
+    grid-template-areas: "header" "main1" "main2" "main3" "footer";
   }
 }

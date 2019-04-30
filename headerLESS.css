@@ -1,0 +1,50 @@
+header {
+  grid-area: header;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: grey;
+}
+.navigation {
+  width: 100%;
+  background-color: #ffffff;
+  height: 60%;
+  padding-top: 10px;
+}
+.buttonProperties {
+  background-color: #ffffff;
+}
+ul {
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6vw;
+  border: 0px;
+  cursor: pointer;
+  list-style-type: none;
+}
+li {
+  float: left;
+  width: 15%;
+  background-color: #ffffff;
+  height: 20px;
+  text-align: left;
+}
+.menuButton {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 15px;
+  width: 15%;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  margin: 10px;
+}
+/*.logoPuma {
+  position: fixed;
+  top: -2%;
+  right: 5%;
+  width: 15%;
+  cursor: pointer;
+}*/

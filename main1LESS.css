@@ -1,0 +1,33 @@
+.main1 {
+  background-size: cover;
+  grid-area: main1;
+  grid-column-start: 3;
+  grid-column-end: 6;
+  color: black;
+}
+.textParam {
+  text-align: center;
+  padding-bottom: 2%;
+}
+.text > .textPuma {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 4vw;
+  font-family: 'Cuprum', sans-serif;
+}
+.text > .textTagline {
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 3vw;
+  font-family: 'Cuprum', sans-serif;
+}
+.borderMain {
+  width: 100%;
+  color: Black;
+  background-image: url(../image/SPB.png);
+  background-size: 100%;
+}
+.text {
+  border: 2px solid black;
+  border-radius: 10px;
+}

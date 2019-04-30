@@ -1,0 +1,56 @@
+.main2{
+  grid-area: main2;
+  grid-column-end: 6;
+}
+
+.gridImg{
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-rows: repeat(2, 50%);
+  grid-template-areas: 
+  ".another" "#money" "#company" "#call-center"
+  ".another1" "#document" "#oil" "#security";
+  grid-gap: 2%;
+  img{
+    width: 50%;
+    height: 60%;
+    padding-top: 20%;
+  }
+}
+.gridImg > .another > #why{
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 3vw;
+}
+.gridImg > .another1 > #pumaAuto{
+  font-family: 'Comfortaa', cursive;
+  text-align: center;
+  font-size: 4vw;
+
+}
+span{
+  font-size: 1vw*0.95;
+  font-family: 'Playfair Display SC', serif;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all .7;
+  -o-transition: all .5s;
+  transition: all .5s;
+  top:0;
+  padding-top: 15%;
+  transform: scale(0) rotate(90deg);
+}
+.gridImg > div{
+  position: relative;
+}
+.gridImg > div:hover span{
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}

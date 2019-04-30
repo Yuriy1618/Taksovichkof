@@ -1,0 +1,49 @@
+footer {
+  grid-area: footer;
+  grid-column-end: 6;
+  display: grid;
+  background-color: rgba(128, 128, 128, 0.692);
+}
+.sizeIcon {
+  margin: 10px;
+  cursor: pointer;
+  float: left;
+  padding-top: 1%;
+  width: 5%;
+}
+#vkIcon > a > img {
+  margin: 10px;
+  cursor: pointer;
+  float: left;
+  padding-top: 1%;
+  width: 5%;
+}
+#instagramIcon > a > img {
+  margin: 10px;
+  cursor: pointer;
+  float: left;
+  padding-top: 1%;
+  width: 5%;
+}
+#youtubeIcon > a > img {
+  margin: 10px;
+  cursor: pointer;
+  float: left;
+  padding-top: 1%;
+  width: 5%;
+}
+.logoIcon > img {
+  margin: 15px;
+  float: right;
+  width: 7%;
+}
+.numberPhone > img {
+  margin: 15px;
+  float: left;
+  width: 5%;
+  padding-top: 1%;
+}
+.number {
+  font-size: 2em;
+  padding-top: 1%;
+}

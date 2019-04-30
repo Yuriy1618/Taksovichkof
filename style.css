@@ -1,39 +1,33 @@
-.grid{
+.grid {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(minmax(150px, 1fr));
-  grid-template-rows: 100px 500px 350px 350px 200px ;
-  grid-template-areas: 
-  "header"
-  "main1"
-  "main2"
-  "main3"
-  "footer"
-  }
-
-header{
+  grid-template-rows: 100px 600px 400px 400px 150px ;
+  grid-template-areas: "header" "main1" "main2" "main3" "footer";
+}
+header {
   grid-area: header;
   grid-column-end: 6;
   display: grid;
   grid-template-columns: 1fr;
   background-color: #50b848;
 }
-.main1{
+.main1 {
   grid-area: main1;
   grid-column-end: 6;
   background-color: aqua;
 }
-.main2{
+.main2 {
   background-color: silver;
   grid-area: main2;
   grid-column-end: 6;
 }
-.main3{
+.main3 {
   background-color: black;
   grid-area: main3;
   grid-column-end: 6;
 }
-footer{
+footer {
   background-color: blue;
   grid-area: footer;
   grid-column-end: 6;
@@ -42,29 +36,32 @@ footer{
   width: 100%;
   background-color: #eaff64;
   height: 50px;
-  padding-top: 20px;
+  padding-top: 10px;
+}
+.buttonProperties {
+  height: 40px;
+  background-color: #eaff64;
+  padding-left: 10px;
 }
 select {
   float: left;
   width: 15%;
+  border: 0px;
+  cursor: pointer;
   height: 40px;
   background-color: #eaff64;
-  border: 0px;
   padding-left: 10px;
-  cursor: pointer;
-
 }
 option {
-  width: 200px;
+  width: 15%;
   height: 40px;
-  background-color:#eaff64;
+  background-color: #eaff64;
   padding-left: 10px;
 }
-
-.menuButton{
+.menuButton {
   padding-top: 5px;
   font-size: 30px;
-  width: 200px;
+  width: 15%px;
   height: 40px;
   background-color: #eaff64;
   border: 1px;
@@ -75,50 +72,8 @@ option {
 }
 .logoPuma {
   position: fixed;
-  top: 0%;
-  right: 6%;
-  width: 13%;
+  top: -2%;
+  right: 5%;
+  width: 15%;
+  cursor: pointer;
 }
-
-
-
-
-/*
-Форма для входа в личный кабинет
-form {
-  border: 2px solid green;
-  border-radius: 20px;
-  right: 75px;
-  top: 30px;
-  background-color: #eaff64;
-  margin: 0 auto;
-  padding: 20px;
-  width: 250px;
-  height: 180px;
-}
-fieldset {
-  padding: 10px;
-  border: 1px solid #34495e;
-  border-radius: 5px;
-}
-fieldset legend {
-  color: #34495e;
-}
-label {
-  margin-bottom: 5px;
-}
-.personalArea input {
-  width: 80%;
-  height: 24px;
-  margin-bottom: 10px;
-  padding: 2px 5px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-}
-#subm {
-  background-color: #4cf15c;
-  left: 90px;
-  bottom: 11px;
-}
-
-*/
