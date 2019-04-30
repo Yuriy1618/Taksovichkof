@@ -1,104 +1,81 @@
-//переменные
-@mainColor: #50b848;
-@buttonColor:  rgb(76, 241, 92);
-@selectColor:  #EAFF64;
-@shadowColor:  #d9e991;
+.grid{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(minmax(150px, 1fr));
+  grid-template-rows: 100px 500px 350px 350px 200px ;
+  grid-template-areas: 
+  "header"
+  "main1"
+  "main2"
+  "main3"
+  "footer"
+  }
+
 header{
-    background-color: @mainColor;
-    min-height: 100px;
-    height: 220px;
-    position: relative;
+  grid-area: header;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: @greenColor;
 }
-form {
-    position: absolute;                 //местоположение
-    right: 75px;
-    top: 30px; 
-
-    background-color: @selectColor;        //стили
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 20px;
-
-    width: 250px;                        //размеры
-    height: 180px;
+.main1{
+  grid-area: main1;
+  grid-column-end: 6;
+  background-color: aqua;
 }
-fieldset {                               //рамка
-    padding: 10px;
-  
-    border: 1px solid #34495e;
-    border-radius: 5px;
+.main2{
+  background-color: silver;
+  grid-area: main2;
+  grid-column-end: 6;
 }
-fieldset legend {
-    color: #34495e;
+.main3{
+  background-color: black;
+  grid-area: main3;
+  grid-column-end: 6;
 }
-label {                                   //названия input
-    display: block;
-    margin-bottom: 5px;
+footer{
+  background-color: blue;
+  grid-area: footer;
+  grid-column-end: 6;
 }
-  
-.personalArea input {                     //общие параметры input
-   width: 80%;
-   height: 24px;
-   margin-bottom: 10px;
-   padding: 2px 5px;
-  
-  
-   border: 1px solid #cccccc;            
-   border-radius: 5px;
-}
-#subm {                                   //параметро кнопки
-    position: relative;                
-    background-color:@buttonColor;
-    left: 90px;
-    bottom: 11px;
-}
-//навигация по сайту (кнопки в хидер)
 .navigation {
-    position: absolute;
-    left: 30px;
-    top: 30px; 
+  width: 100%;
+  background-color: @yellowColor;
+  height: 50px;
+  padding-top: 20px;
 }
 select {
-    width: 200px;
-    height:40px;
-    border-radius: 10px;
-    background-color: @selectColor;
+  float: left;
+  width: 15%;
+  height: 40px;
+  background-color: @yellowColor;
+  border: 0px;
+  padding-left: 10px;
+  cursor: pointer;
+
 }
-option{
-    width: 200px;
-    height:40px;
-    background-color: @selectColor;
-}
-#submitMenu{
-    width: 200px;
-    height:40px;
-    border-radius: 10px;
-    background-color: @selectColor;
-    text-align: left;
+option {
+  width: 200px;
+  height: 40px;
+  background-color: @yellowColor;
+  padding-left: 10px;
 }
 
-.logoForHeader{
-    position: relative;
-    width: 300px;
-    bottom: 30px;
+.menuButton{
+  padding-top: 5px;
+  font-size: 30px;
+  width: 200px;
+  height: 40px;
+  background-color: @yellowColor;
+  border: 1px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: none;
+  margin: 10px;
 }
-.logoPuma{
-    position: relative;
-    width: 500px;
-    left: 350px;
-    top: 30px;
-}
-#pumaText{
-    position: relative;
-    left: 410px;
-    bottom: 200px;
-
-    font-size: 35px;
-}
-#officialText{
-    position: relative;
-    left: 340px;
-    bottom: 210px;
-
-    font-size: 20px;
+.logoPuma {
+  position: fixed;
+  top: 0%;
+  right: 6%;
+  width: 13%;
 }
